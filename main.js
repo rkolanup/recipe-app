@@ -2,14 +2,12 @@
 const searchForm = document.querySelector('form');
 //Accessing Search-result
 const searchResultDiv = document.querySelector('.searchResult');
-//accessing container
-//const container = document.querySelector('.container');
 
 let searchQuery = '';
 
 const APP_ID = '859b0070';
 const APP_key = 'b4b82f1d5a14800f6cf7fb452fc93aab';
-//
+
 searchForm.addEventListener('submit',(e) => {
     e.preventDefault();
     //get input value from form
