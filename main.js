@@ -37,7 +37,10 @@ function generateHTML(results){
                 <h1 class="title">${result.recipe.label}</h1>
                 <a href="${result.recipe.url}" target = "_blank" class="viewButton">View Recipe</a>
             </div>
-            <p class="itemData">Calories: ${result.recipe.calories.toFixed(0)};</p>     
+            <p class="itemData">Calories: ${result.recipe.calories.toFixed(0)}</p>  
+            <p class="itemData">Cuisine Type: ${result.recipe.cuisineType}</p>
+            <p class="itemData">Dish Type: ${result.recipe.dishType}</p>  
+            <p class="itemData">Source: ${result.recipe.source}</p> 
         </div>`
     })
     searchResultDiv.innerHTML = generatedHTML;
